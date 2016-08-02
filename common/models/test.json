@@ -1,0 +1,27 @@
+{
+  "name": "Test",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "indexes": {
+    "location_geo": {
+      "keys": {
+        "location": "2dsphere"
+      }
+    }
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "location": {
+      "type": "geopoint"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

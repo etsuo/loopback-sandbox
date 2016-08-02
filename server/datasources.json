@@ -1,6 +1,12 @@
 {
   "db": {
-    "name": "db",
-    "connector": "memory"
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "test",
+    "name": "testDb",
+    "connector": "mongodb",
+    "debug": true,
+    "enableGeoIndexing": true
   }
 }
